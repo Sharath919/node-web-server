@@ -30,6 +30,11 @@ app.get('/about',(req,res)=>{
         heading:"welcome"
     });
 })
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        heading:"welcome to my portforlio"
+    })
+})
 
 app.listen(port,()=>{
     console.log(`listening on port ${port}`);
